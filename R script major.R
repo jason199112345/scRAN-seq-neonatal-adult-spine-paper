@@ -1,3 +1,16 @@
+library(Seurat)
+library(SeuratData)
+library(cowplot)
+library(patchwork)
+library(ggplot2)
+library(dplyr)
+library("BiocFileCache")
+library("writexl")
+library(viridis)
+library(RColorBrewer)
+library(EnhancedVolcano)
+library(plotly)
+
 #===============Reading Data and Create Seurat Objects ==================
 
 IVD3=read.csv("/Users/jiangw2/Dropbox/Research/Dmitriy Sheyn lab/03b-scRNAseq for notochordal/00_Original Data/IVD3.csv", sep=",", header=T)
