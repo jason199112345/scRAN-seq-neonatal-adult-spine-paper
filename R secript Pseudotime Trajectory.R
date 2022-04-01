@@ -1,6 +1,21 @@
 #Six samples were created as Seurat objects by code shown in "R script major.R".
 #The six seurat objects are: nIVD1, nIVD2, nIVD3, aIVD1, aIVD2, aIVD3.
 
+library(Seurat)
+library(SeuratData)
+library(cowplot)
+library(patchwork)
+library(ggplot2)
+library(dplyr)
+library("BiocFileCache")
+library("writexl")
+library(viridis)
+library(RColorBrewer)
+library(EnhancedVolcano)
+library(plotly)
+memory.limit(size = 50000000)
+
+
 DataAll <- c(nIVD1, nIVD2, nIVD3, aIVD1, aIVD2, aIVD3)
 
 
